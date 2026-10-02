@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Secrets: never commit
+.env
+*.pem
+*.key
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+
+# dbt
+dbt/**/target/
+dbt/**/logs/
+dbt/**/dbt_packages/
+
+# Databricks CLI / bundles
+.databricks/
+
+# Raw data stays out of the repo (Arbeitnow terms + PII)
+data/
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/settings.json
